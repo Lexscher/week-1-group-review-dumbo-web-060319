@@ -7,7 +7,7 @@ class Car
 
     @@all = []
 
-    def initialize(make, model)
+    def initialize(make:, model:)
         @make = make
         @model = model
         @@all << []
@@ -23,13 +23,13 @@ class Car
 
 end
 
-volvo_lightning = Car.new("Volvo", "Lightning")
-yugo = Car.new("Zastava", "Yugo")
-lada = Car.new("AvtoVAZ", "Lada")
+# volvo_lightning = Car.new("Volvo", "Lightning")
+# yugo = Car.new("Zastava", "Yugo")
+# lada = Car.new("AvtoVAZ", "Lada")
 
-volvo_lightning.make
+# volvo_lightning.make
 #=> "Volvo"
-volvo_lightning.model
+# volvo_lightning.model
 #=> "Lightning"
 
 Car.drive
